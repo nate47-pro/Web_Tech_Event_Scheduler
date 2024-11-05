@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+
+    <style>
+        h1{
+            text-align: center;
+            text-decoration-line: underline;
+            text-decoration-color: yellowgreen;
+            text-decoration-style: wavy;
+        }
+
+    </style>
+
+</head>
+<body>
+   
+    <header>
+        <h1>EVENT REGISTRATION</h1>
+    </header>
+
+    <form method="POST">
+        <label for="First Name">
+            First Name:
+        </label>
+        <input type="text" id="" name="" required/>
+
+        <label>
+            Last Name:
+        </label>
+        <input type="text" required/>
+
+        <label>
+            Email:
+        </label>
+        <input type ="email" required/>
+
+        <label>
+            Phone number:
+        </label>
+        <input type="number" minlength="10" required/>
+
+
+        <label for="Tickets">Choose ticket type:</label>
+             <select id="ticket" name="ticket">
+                <option value="General">General</option>
+                <option value="VIP">VIP</option>
+            </select>
+
+    
+    <button id="myBtn">Register</button>
+
+    <p id="demo"></p>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", msgConfirm);
+
+function msgConfirm() {
+  document.getElementById("demo").innerHTML ="Succesful form submission";
+}
+</script>
+
+
+    <footer>
+        <p>Already registered for an event? <a href="index.html">Back to Home</a></p>
+    </footer>
+    
+</body>
+</html>
